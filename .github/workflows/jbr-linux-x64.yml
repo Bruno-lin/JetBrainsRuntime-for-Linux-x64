@@ -50,6 +50,7 @@ jobs:
       run: |
         git clone https://github.com/JetBrains/jcef.git jcef
         cd jcef
+        git reset --hard 6b21392b6e2adf0acbd191e4e08fca860e622b96
         mkdir jcef_build && cd jcef_build
         cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ..
         make -j4
